@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&display=swap" rel="stylesheet">
+    </head>
+
+    <body onscroll="changeBurger()">
+        <header>
+            <input type="checkbox" id="menu-toggle">
+
+            <nav id="navbar">
+                <ion-icon name="close-outline" size="large"></ion-icon>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#more">Code</a></li>
+                </ul>
+            </nav>
+
+            <ion-icon name="menu" id="burger" size="large"></ion-icon>
+
+        </header>
+
+        <section id="welcome-section"> 
+            <h1>Noor Rafiq</h1>
+            <p>freeCodeCamp project collection</p>
+        </section>
+
+        <section id="projects">
+            <h1>responsive web design projects</h1>
+
+            <div id="project-links">
+                <a href="https://nhrafiq.github.io/tribute-page/" class="project-tile" target="_blank">
+                    <p class="code">&lt;</p>
+                    <p>tribute page</p>
+                    <p class="code">&#47;&gt;</p>
+                </a>
+                <a href="https://nhrafiq.github.io/survey-form/" class="project-tile" target="_blank">
+                    <p class="code">&lt;</p>
+                    <p>survey form</p>
+                    <p class="code">&#47;&gt;</p>
+                </a>
+                <a href="https://nhrafiq.github.io/product-landing-page/" class="project-tile" target="_blank">
+                    <p class="code">&lt;</p>
+                    <p>product landing page</p>
+                    <p class="code">&#47;&gt;</p>
+                </a>
+                <a href="https://nhrafiq.github.io/technical-documentation/" class="project-tile" target="_blank">
+                    <p class="code">&lt;</p>
+                    <p>technical documentation</p>
+                    <p class="code">&#47;&gt;</p>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <h1>want to see the source code?</h1>
+            <p>see my <a href="https://github.com/nhrafiq" id="profile-link" target="_blank">GitHub</a></p>
+            <p>icons by <a href="https://ionicons.com/" target="_blank">Ionicons</a></p>
+        </footer>
+
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        <script>
+            // source: https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling
+            function changeBurger() {
+                if(window.pageYOffset >= window.innerHeight)
+                    document.getElementById('burger').classList.add('scrolled');
+                else document.getElementById('burger').classList.remove('scrolled');
+            }
+        </script>
+        <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    </body>
+</html>
